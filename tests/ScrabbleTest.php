@@ -3,56 +3,49 @@
     class ScrabbleTest extends PHPUnit_Framework_TestCase
     {
 
-        function testScrabble()
+        function testScrabbleOnePoint()
 
         {
             $test_scrabble = new Scrabble;
-            $input = "I";
+            $input = "A";
 
             $result = $test_scrabble->ScrabbleAtor($input);
 
-            $this->assertEquals(["I"], $result);
+            $this->assertEquals(["1"], $result);
         }
-
-        function testScrabbleWord()
-
-        {
-            $test_scrabble = new Scrabble;
-            $input = "word";
-
-            $result = $test_scrabble->ScrabbleAtor($input);
-
-            $this->assertEquals(["w", "o", "r", "d"], $result);
-        }
-
-        function testScrabbleUpper()
-
-        {
-            $test_scrabble = new Scrabble;
-            $input = "word";
-
-            $result = $test_scrabble->ScrabbleAtor($input);
-
-            $this->assertEquals(["W", "O", "R", "D"], $result);
-        }
-
-
-
-
-
     }
 
-
-
-        // function testScrabbleOnePoint()
+        // <!-- function testScrabble()
         //
         // {
         //     $test_scrabble = new Scrabble;
-        //     $input = "A";
+        //     $input = "I";
         //
         //     $result = $test_scrabble->ScrabbleAtor($input);
         //
-        //     $this->assertEquals(["1"], $result);
+        //     $this->assertEquals(["I"], $result);
+        // }
+        //
+        // function testScrabbleWord()
+        //
+        // {
+        //     $test_scrabble = new Scrabble;
+        //     $input = "word";
+        //
+        //     $result = $test_scrabble->ScrabbleAtor($input);
+        //
+        //     $this->assertEquals(["w", "o", "r", "d"], $result);
+        // }
+        //
+        // function testScrabbleUpper()
+        //
+        // {
+        //     $test_scrabble = new Scrabble;
+        //     $input = "word";
+        //
+        //     $result = $test_scrabble->ScrabbleAtor($input);
+        //
+        //     $this->assertEquals(["W", "O", "R", "D"], $result);
         // }
 
 
@@ -60,5 +53,13 @@
 
 
 
-// }
+
+
+
+
+
+
+
+
+// } -->
 ?>
