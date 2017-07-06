@@ -7,9 +7,14 @@
         function scrabbleAtor($input)
         {
             $word = str_split($input);
+            // foreach($word as $letter)
+            // {
+            //     if($letter == "") {
+            //     return "";
+            // }
+             return $word;
 
-            return $word;
-            // var_dump("your mom");
+        // }
         }
     }
  ?>
