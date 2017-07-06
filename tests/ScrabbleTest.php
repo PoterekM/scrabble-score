@@ -25,11 +25,40 @@
             $this->assertEquals(["w", "o", "r", "d"], $result);
         }
 
+        function testScrabbleUpper()
+
+        {
+            $test_scrabble = new Scrabble;
+            $input = "word";
+
+            $result = $test_scrabble->ScrabbleAtor($input);
+
+            $this->assertEquals(["W", "O", "R", "D"], $result);
+        }
+
+
+
+
+
+    }
+
+
+
+        // function testScrabbleOnePoint()
+        //
+        // {
+        //     $test_scrabble = new Scrabble;
+        //     $input = "A";
+        //
+        //     $result = $test_scrabble->ScrabbleAtor($input);
+        //
+        //     $this->assertEquals(["1"], $result);
+        // }
 
 
 
 
 
 
-}
+// }
 ?>
