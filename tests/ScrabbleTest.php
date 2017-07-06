@@ -11,8 +11,24 @@
 
             $result = $test_scrabble->ScrabbleAtor($input);
 
-            $this->assertEquals(["1"], $result);
+            $this->assertEquals(1, $result);
         }
+
+        function testScrabbleMath()
+
+        {
+            $test_scrabble = new Scrabble;
+            $input = "QJA";
+
+            $result = $test_scrabble->ScrabbleAtor($input);
+
+            $this->assertEquals(19, $result);
+        }
+
+
+
+
+
     }
 
         // <!-- function testScrabble()
